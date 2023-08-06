@@ -9,8 +9,8 @@ ExecStart=/usr/bin/es-exporter
 EnvironmentFile=/etc/es-exporter/exporter.conf
 TimeoutStopSec=0
 Restart=always
-User=elasticsearch
-Group=elasticsearch
+User=root
+Group=root
 
 [Install]
 WantedBy=multi-user.target
