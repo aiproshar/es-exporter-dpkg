@@ -1,0 +1,7 @@
+Package: es-exporter
+Version: 1.6.0
+Architecture: amd64
+Essential: no
+Priority: optional
+Maintainer: Arafat Islam Khan
+Description: Elastic Search Exporter package based on github.com/prometheus-community/elasticsearch_exporter

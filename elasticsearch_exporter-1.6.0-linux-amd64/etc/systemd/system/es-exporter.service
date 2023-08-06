@@ -1,0 +1,17 @@
+[Unit]
+Description=Elastic Search Exporter package based on github.com/prometheus-community/elasticsearch_exporter
+After=network.target
+Documentation=https://github.com/prometheus-community/elasticsearch_exporter
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/es-exporter
+EnvironmentFile=/etc/es-exporter/exporter.conf
+TimeoutStopSec=0
+Restart=always
+User=elasticsearch
+Group=elasticsearch
+
+[Install]
+WantedBy=multi-user.target
+Alias=es-exporter.service
